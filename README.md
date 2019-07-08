@@ -7,6 +7,18 @@ Aplikasi ini dibangun menggunakan:
 | React JS | 16.8.6  |
 |   NPM    |  6.4.1  |
 
+### DOKUMENTASI API
+
+untuk dokumentasi api dapat diliat disini.
+
+https://walletsederhana.docs.apiary.io/#
+
+### DEMO APLIKASI
+
+untuk demo aplikasi dapat langsung diakses disini.
+
+http://walletku.duckdns.org/
+
 ### INSTALASI
 
 Untuk langkah pertama ketikan perintah berikut pada command line anda:
