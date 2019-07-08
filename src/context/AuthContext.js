@@ -57,24 +57,28 @@ export class AuthContextProvider extends Component {
                 if (error.response) {
                     var myhtml = document.createElement("div");
                     let htmlText = "";
-                    error.response.data.message.validation.map(function(
-                        item,
-                        index
-                    ) {
-                        if (item.password) {
-                            htmlText += "<p>" + item.password + "<p>";
-                        }
 
-                        if (item.usernameORemail) {
-                            htmlText += "<p>" + item.usernameORemail + "<p>";
-                        }
-
-                        if (item.credentials) {
-                            htmlText += "<p>" + item.credentials + "<p>";
-                        }
-                    });
-
-                    myhtml.innerHTML = htmlText;
+                    if(error.response.data.message.validation)
+                    {
+                        error.response.data.message.validation.map(function(
+                            item,
+                            index
+                        ) {
+                            if (item.password) {
+                                htmlText += "<p>" + item.password + "<p>";
+                            }
+    
+                            if (item.usernameORemail) {
+                                htmlText += "<p>" + item.usernameORemail + "<p>";
+                            }
+    
+                            if (item.credentials) {
+                                htmlText += "<p>" + item.credentials + "<p>";
+                            }
+                        });
+    
+                        myhtml.innerHTML = htmlText;
+                    }
 
                     swal({
                         title: "Ooops",
@@ -110,26 +114,30 @@ export class AuthContextProvider extends Component {
                 if (error.response) {
                     var myhtml = document.createElement("div");
                     let htmlText = "";
-                    error.response.data.message.validation.map(function(
-                        item,
-                        index
-                    ) {
-                        if (item.name) {
-                            htmlText += "<p>" + item.name + "<p>";
-                        }
 
-                        if (item.username) {
-                            htmlText += "<p>" + item.username + "<p>";
-                        }
-
-                        if (item.email) {
-                            htmlText += "<p>" + item.email + "<p>";
-                        }
-
-                        if (item.password) {
-                            htmlText += "<p>" + item.password + "<p>";
-                        }
-                    });
+                    if(error.response.data.message.validation)
+                    {
+                        error.response.data.message.validation.map(function(
+                            item,
+                            index
+                        ) {
+                            if (item.name) {
+                                htmlText += "<p>" + item.name + "<p>";
+                            }
+    
+                            if (item.username) {
+                                htmlText += "<p>" + item.username + "<p>";
+                            }
+    
+                            if (item.email) {
+                                htmlText += "<p>" + item.email + "<p>";
+                            }
+    
+                            if (item.password) {
+                                htmlText += "<p>" + item.password + "<p>";
+                            }
+                        });
+                    }
 
                     myhtml.innerHTML = htmlText;
 
