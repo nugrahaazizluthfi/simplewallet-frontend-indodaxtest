@@ -44,7 +44,7 @@ jika api dijalankan menggunakan php artisan serve nya laravel:
 
 -   http://localhost:8000/api/
 
-*   ENDPOINT dimulai dengan menggunakan prefix /api/
+ENDPOINT dimulai dengan menggunakan prefix /api/
 
 ### CARA MENJALANKAN WEB
 
