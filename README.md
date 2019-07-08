@@ -19,6 +19,13 @@ untuk demo aplikasi dapat langsung diakses disini.
 
 http://walletku.duckdns.org/
 
+Untuk login anda bisa menggunakan User Account ini:
+
+|     Email     | Password |
+| :-----------: | :------: |
+| demoa@demo.id |  123456  |
+| demob@demo.id |  123456  |
+
 ### INSTALASI
 
 Untuk langkah pertama ketikan perintah berikut pada command line anda:
@@ -77,10 +84,3 @@ $ npm run build
 ```
 
 ini akan mengenerate file yang terkompres pada folder build, anda dapat memindahkan isi folder build pada webserver anda dan mengaksesnya (\*react default hanya menerima alamat yang sudah memiliki ssl)
-
-Untuk login anda bisa menggunakan User Account ini:
-
-|     Email     | Password |
-| :-----------: | :------: |
-| demoa@demo.id |  123456  |
-| demob@demo.id |  123456  |
