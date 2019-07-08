@@ -1,3 +1,12 @@
+### TECH
+
+Aplikasi ini dibangun menggunakan:
+
+|   Tech   | Version |
+| :------: | :-----: |
+| React JS | 16.8.6  |
+|   NPM    |  6.4.1  |
+
 ### INSTALASI
 
 Untuk langkah pertama ketikan perintah berikut pada command line anda:
