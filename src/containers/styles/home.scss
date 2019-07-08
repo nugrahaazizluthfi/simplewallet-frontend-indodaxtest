@@ -1,0 +1,173 @@
+.home {
+    padding-top: 25px;
+    &__header {
+        margin-bottom: 10px;
+
+        &-welcome {
+            font-size: 14px;
+        }
+    }
+
+    &__body {
+        &-navigation {
+            position: relative;
+            border-radius: 5px;
+            padding: 10px;
+            background: #fff;
+
+            .saldo {
+                display: block;
+                width: 100%;
+                text-align: right;
+
+                &__nominal {
+                    font-size: 48px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .btn {
+                text-decoration: none;
+                display: inline-block;
+                border: 1px solid #ddd;
+                padding: 10px;
+                width: 85px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                img {
+                    display: block;
+                    height: 50px;
+                    position: relative;
+                    margin: 0 auto;
+                }
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 10px;
+                    color: #999;
+                    font-weight: bold;
+                }
+
+                // Extra small devices (portrait phones, less than 576px)
+                @media (max-width: 575.98px) {
+                    width: 55px;
+                }
+
+                // Small devices (landscape phones, 576px and up)
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    width: 65px;
+                }
+
+                // Medium devices (tablets, 768px and up)
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 75px;
+                }
+            }
+
+            .btn:hover {
+                span {
+                    color: #000;
+                }
+            }
+        }
+
+        &-content {
+            padding-top: 10px;
+            &-card {
+                display: block;
+                position: relative;
+            }
+
+            h3 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+.loading {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0px;
+    left: 0px;
+
+    div {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        top: 40%;
+        img {
+            display: block;
+            position: relative;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+            font-size: 15px;
+            color: #fff;
+            padding-top: 5px;
+        }
+    }
+}
+
+select {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+    background-color: #3f51b5;
+    background-repeat: no-repeat;
+    background-position: right 10px top 15px;
+    background-size: 16px 16px;
+    padding: 12px;
+    padding-right: 30px;
+    width: auto;
+    font-family: arial, tahoma;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    outline: 0;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    text-overflow: "";
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#blue {
+    background-color: #fff;
+}
+
+select:focus,
+select:active {
+    border: 0;
+    outline: 0;
+}
+
+option:focus {
+    background: pink;
+}

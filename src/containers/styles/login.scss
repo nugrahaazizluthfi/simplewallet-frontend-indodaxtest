@@ -1,0 +1,49 @@
+.login {
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    &__header {
+        background: #eee;
+        img {
+            display: block;
+            height: 4rem;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        &-title {
+            padding: 10px;
+            h3,
+            p {
+                text-align: center;
+                color: #999;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        border-radius: 5px;
+        padding: 20px;
+        background: #fff;
+
+        &-submit {
+            margin-top: 10px;
+        }
+    }
+
+    &__footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
