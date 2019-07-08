@@ -32,6 +32,22 @@ Isi variable REACT_APP_API_URL pada file .env di folder client kamu dengan alama
 
 -   http://localhost/restapp/public/api/
 
+### SETUP CLIENT ENV
+
+untuk mengatur path api pada .env, setting url berikut pada variable REACT_APP_API_URL:
+
+jika api diletakan dan dijalankan di webserver seperti XAMPP/Laragon :
+
+-   http://localhost/restapp/public/api/
+
+jika api dijalankan menggunakan php artisan serve nya laravel:
+
+-   http://localhost:8000/api/
+
+*   ENDPOINT dimulai dengan menggunakan prefix /api/
+
+### CARA MENJALANKAN WEB
+
 Setelah selesai anda dapat mengaktifkan server node anda atau membuild file anda terlebih dahulu, dengan menjalankan perintah:
 
 RUN SERVER
@@ -45,7 +61,7 @@ ini dapat diakses langsung pada browser dengan mengakses URL ini: http://localho
 RUN BUILD
 
 ```sh
-$ npm run start
+$ npm run build
 ```
 
 ini akan mengenerate file yang terkompres pada folder build, anda dapat memindahkan isi folder build pada webserver anda dan mengaksesnya (\*react default hanya menerima alamat yang sudah memiliki ssl)
